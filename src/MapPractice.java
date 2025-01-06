@@ -19,13 +19,16 @@ public class MapPractice {
     // Find the size (number of key/value pairs) of the Map
     System.out.println(newMap.size());
     // Replace the value associated with a given key (the size of the Map should not change)
-
+    newMap.replace("For", 9);
     // Check whether the Map contains a given key
-
+    System.out.println(newMap.containsKey("Port"));
     // Check whether the Map contains a given value
-
+    System.out.println(newMap.containsValue(4));
     // Iterate over the keys of the Map, printing each key
-
+    System.out.println("Keys:");
+    for (String keys : newMap.keySet()) {
+      System.out.println(keys);
+    }
     // Iterate over the values of the map, printing each value
 
     // Iterate over the entries in the map, printing each key and value
