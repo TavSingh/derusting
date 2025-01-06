@@ -30,9 +30,15 @@ public class MapPractice {
       System.out.println(keys);
     }
     // Iterate over the values of the map, printing each value
-
+    System.out.println("Values:");
+    for (Integer values : newMap.values()) {
+      System.out.println(values);
+    }
     // Iterate over the entries in the map, printing each key and value
-
+    System.out.println("Both Keys and Values");
+    for (Map.Entry<String, Integer> set : newMap.entrySet()) {
+        System.out.println("Keys: " + set.getKey() + ", Values: " + set.getValue());
+    }
     /*
      * Usage tip!
      * 
