@@ -8,11 +8,17 @@ public class StringPractice {
     word += " high?";
     System.out.println(word);
     // Find the value of the character at index 3
-
+    System.out.println(word.charAt(3));
     // Check whether the string contains a given substring (i.e. does the string have "abc" in it?)
-
+    if (word.contains("high")) {
+      System.out.println("True");
+    } else {
+      System.out.println("False");
+    }
     // Iterate over the characters of the string, printing each one on a separate line
-
+    for (Character letter : word.toCharArray()) {
+        System.out.println(letter);
+    }
     // Create an ArrayList of Strings and assign it to a variable
 
     // Add multiple strings to the List (OK to do one-by-one)
